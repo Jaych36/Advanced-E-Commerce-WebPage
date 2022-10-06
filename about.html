@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce || About Us</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+    <nav class="nav nav_top">
+        <div class="logo">
+           <a href="#"><img src="logo.jfif" width="100px"></a> 
+        </div>
+        <div class="nav_side">
+          <input type="text" placeholder="Search..">
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Login/Register</a>
+        </div>
+    </nav>
+<div class="about_us">
+  <h2>About Us</h2>
+  <div class="about_content">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Amet ratione quas officia vel laborum, at officiis vero itaque minus dicta
+        possimus recusandae harum! Modi dignissimos quidem ratione quis alias voluptates?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, 
+      harum corrupti autem quibusdam maxime quas ratione eaque earum. 
+      Et itaque quod dolore sit pariatur dolorum repellat in porro nisi veniam.
+    </p>
+  </div>
+<hr>
+  <h2>Our Mission</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Amet ratione quas officia vel laborum, at officiis vero itaque minus dicta
+     possimus recusandae harum! Modi dignissimos quidem ratione quis alias voluptates?
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, 
+   harum corrupti autem quibusdam maxime quas ratione eaque earum. 
+   Et itaque quod dolore sit pariatur dolorum repellat in porro nisi veniam.
+ </p>
+</div>
+
+
+
+    <div class="feed">
+  <h2>Give Your FeedBack!!!</h2>
+  <div class="feed_form">
+    <form name="review-form" method="POST">
+      <input type="text" name="Name" placeholder="Name"><br>
+      <input type="email" name="Email" placeholder="Email Id"><br>
+      <input type="number" name="Number" placeholder="Contact Number"><br>
+      <textarea name="Review" placeholder="Write Your Review" cols="7" rows="5"></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<hr>
+<footer>
+ 
+  <div class="pages">
+    <h3>Our Info. Pages</h3>
+    <a href="about.html">About Us</a>|
+    <a href="services.html">Services</a>|
+    <a href="login.html">Login</a>|
+    <a href="contact.html">Contact</a>|
+    <a href="register.html">Sign Up</a>
+  </div>
+  <hr>
+  <div class="doc">
+    <h3>Our Legal Documents</h3>
+    <a href="">Privacy Policy</a>|
+    <a href="">Terms Of Use</a>|
+    <a href="">Refund Policy</a>
+  </div>
+  <hr>
+  <div class="social">
+    <h3>Join Us On Social Media</h3>
+    <a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>|
+    <a href="https://www.facebook.com/login.php"><i class="fa fa-facebook"></i></a>|
+    <a href="https://www.linkedin.com/login/"><i class="fa fa-linkedin"></i></a>|
+    <a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram"></i></a>
+  
+  </div>
+  <hr>
+  <div class="contact">
+  <h3>Contact Us Via..</h3>
+  <a href=""><i class="fa fa-phone"></i>-->0731-xxxxx</a>|
+    <a href=""><i class="fa fa-envelope-o"></i>-->example201@gmail.com</a>
+   
+  
+  </div>
+  <hr>
+  <p>Copyright &copy; 2022 E-Commerce. All rights are reserved.</p>
+</footer>
+
+ 
+
+<!--Data Collection-->
+<script type="text/javascript">
+  const scriptURL =
+      'https://script.google.com/macros/s/AKfycbyMr_I2wCS9haQPoqXZz0SEM2ga19CfwvNoJLF_EydiF--XgbBHEsQvOu_dEZsmcGLD7A/exec'
+  const form = document.forms['review-form']
+
+  form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+              method: 'POST',
+              body: new FormData(form)
+          })
+          .then(response => alert(
+              "Thanks for you valuable feedback!!!"))
+          .catch(error => console.error('Error!', error.message))
+  })
+
+</script>
+
+
+</body>
+</html>
+
